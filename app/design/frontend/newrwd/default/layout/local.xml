@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+   <default translate="label" module="page">
+     <reference name="header">
+       <action method="unsetChild"><alias>store_language</alias></action>
+     </reference>
+     <reference name="footer">
+        <action method="insert"><block>store_language</block><sibling /><after>footer.newsletter</after></action>
+     </reference>
+   </default>
+</layout>
